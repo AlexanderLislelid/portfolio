@@ -23,7 +23,7 @@ nav {
 }
 
 .projects-heading {
-  grid-column: 1 / -1; /* Heading tar hele raden */
+  grid-column: 1 / -1;
   margin-bottom: var(--space-24);
   padding-bottom: 20px;
   border-bottom: 1px solid var(--cta-border);
@@ -116,6 +116,10 @@ nav {
   flex-direction: column;
   gap: var(--space-16);
   padding: var(--space-48);
+}
+
+#contact a {
+  font-weight: 500;
 }
 
 .contact-links a {
