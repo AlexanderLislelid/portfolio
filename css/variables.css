@@ -1,0 +1,22 @@
+:root {
+  /* Colour background and cards */
+  --bg-main: #0e0f10;
+  --bg-card: #1a1c1d;
+  --border-card: #2a2d2e;
+
+  /* Colour fonts */
+  --text-primary: #f2f2f2;
+  --text-secondary: #9fa4a6;
+
+  /* Colour Buttons and links */
+  --cta: #4cc9a7;
+  --cta-hover: #5df2a6;
+  --cta-border: #2e6f5a;
+
+  /* Typography */
+  --font-size-h1: 36px;
+  --font-size-h2: 20px;
+
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
