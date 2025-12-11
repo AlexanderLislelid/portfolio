@@ -11,7 +11,7 @@ projects.forEach((project) => {
   const demo = document.createElement("a");
   const tech = document.createElement("p");
 
-  wrapper.append(card);
+  card.className = "project-card";
 
   title.textContent = project.title;
   title.className = "project-title";
@@ -33,5 +33,6 @@ projects.forEach((project) => {
   tech.textContent = project.tech;
   tech.className = "project-tech";
 
+  wrapper.append(card);
   card.append(title, description, image, repo, demo, tech);
 });
