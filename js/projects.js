@@ -14,8 +14,7 @@ export const projects = [
   {
     id: "csm",
     title: "Community Science Museum",
-    description:
-      "The site aims to engage children and young teens (ages 7-15) by presenting science through accessible and visually appealing content.",
+    description: "An interactive museum for children",
     image: "../images/thumbnails/museum.png",
     tech: [
       "../images/icons/html5-brands-solid-full.svg",

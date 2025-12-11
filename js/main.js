@@ -9,10 +9,14 @@ projects.forEach((project) => {
   const image = document.createElement("img");
   const repo = document.createElement("a");
   const demo = document.createElement("a");
+  const bottomCard = document.createElement("div");
   const techWrapper = document.createElement("div");
+  const linkWrapper = document.createElement("div");
 
   card.className = "project-card";
   techWrapper.className = "tech-wrapper";
+  linkWrapper.className = "link-wrapper";
+  bottomCard.className = "bottom-card-wrapper";
 
   title.textContent = project.title;
   title.className = "project-title";
@@ -24,8 +28,9 @@ projects.forEach((project) => {
   image.alt = project.description;
   image.className = "project-image";
 
-  repo.className = "fa-brands fa-github";
+  repo.innerHTML = `Repository <i class="fa-brands fa-github"></i>`;
   repo.href = project.repo;
+  repo.className = "repo";
 
   demo.className = "cta";
   demo.href = project.demo;
@@ -39,6 +44,8 @@ projects.forEach((project) => {
   });
 
   wrapper.append(card);
+  bottomCard.append(linkWrapper, techWrapper);
+  linkWrapper.append(demo, repo);
 
-  card.append(title, description, image, repo, demo, techWrapper);
+  card.append(title, description, image, bottomCard);
 });

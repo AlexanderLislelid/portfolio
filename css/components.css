@@ -1,3 +1,27 @@
+/* Icons */
+
 .tech-icon {
-  max-width: 30px;
+  width: 30px;
+}
+
+/* Buttons */
+
+.cta {
+  border: 2px solid var(--cta-border);
+  padding: var(--space-8);
+  border-radius: var(--radius-pill);
+  width: 200px;
+  text-align: center;
+
+  background-color: transparent;
+  transition: all 0.25s ease;
+}
+
+.cta:hover,
+.cta:focus {
+  background: rgba(76, 201, 167, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-color: var(--cta-hover);
+  box-shadow: 0 0 2px var(--cta-hover);
 }
