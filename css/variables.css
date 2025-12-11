@@ -1,6 +1,7 @@
 :root {
   /* Colour background and cards */
   --bg-main: #0e0f10;
+  --bg-main-gradient: linear-gradient(135deg, #0e0f10, #1e2226);
   --bg-card: #1a1c1d;
   --border-card: #2a2d2e;
 
