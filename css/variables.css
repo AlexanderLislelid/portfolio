@@ -4,6 +4,7 @@
   --bg-main-gradient: linear-gradient(135deg, #0e0f10, #1e2226);
   --bg-card: #1a1c1d;
   --border-card: #2a2d2e;
+  --bg-card-gradient: linear-gradient(145deg, #1c1c1c 0%, #2a2f3a 100%);
 
   /* Colour fonts */
   --text-primary: #f2f2f2;
