@@ -13,7 +13,7 @@ export const projects = [
   },
   {
     id: "csm",
-    title: "Community Science Museum",
+    title: "Science Museum",
     description: "An interactive museum for children",
     image: "../images/thumbnails/museum.png",
     tech: [
