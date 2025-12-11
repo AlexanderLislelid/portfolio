@@ -95,6 +95,13 @@ nav {
 
 /* Contact */
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-links {
   display: inline-flex;
   flex-direction: column;
@@ -104,4 +111,9 @@ nav {
 
 .contact-links a {
   color: var(--text-secondary);
+}
+
+.downloads {
+  display: flex;
+  gap: var(--space-24);
 }
