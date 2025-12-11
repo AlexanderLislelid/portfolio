@@ -46,3 +46,12 @@
   margin-right: var(--space-16);
   color: var(--cta);
 }
+
+.download-cta {
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-pill);
+  width: 150px;
+  text-align: center;
+  background-color: var(--cta);
+  color: var(--bg-main);
+}
