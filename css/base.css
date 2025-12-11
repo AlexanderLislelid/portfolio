@@ -56,3 +56,7 @@ svg {
   max-width: 100%;
   display: block;
 }
+
+section {
+  margin-top: 100px;
+}

@@ -4,7 +4,10 @@ export const projects = [
     title: "Rainy Days",
     description: "E-commerce jacket store. My first coding project",
     image: "../images/thumbnails/rainy-days.png",
-    tech: ["HTML", "CSS"],
+    tech: [
+      "../images/icons/html5-brands-solid-full.svg",
+      "../images/icons/css-brands-solid-full.svg",
+    ],
     repo: "https://github.com/AlexanderLislelid/html-css-alexanderlislelid",
     demo: "https://alexanderlislelid.github.io/html-css-alexanderlislelid/",
   },
@@ -14,7 +17,10 @@ export const projects = [
     description:
       "The site aims to engage children and young teens (ages 7-15) by presenting science through accessible and visually appealing content.",
     image: "../images/thumbnails/museum.png",
-    tech: ["HTML", "CSS"],
+    tech: [
+      "../images/icons/html5-brands-solid-full.svg",
+      "../images/icons/css-brands-solid-full.svg",
+    ],
     repo: "https://github.com/AlexanderLislelid/Semester-Project",
     demo: "https://alexanderlislelid.github.io/Semester-Project/",
   },
@@ -23,7 +29,11 @@ export const projects = [
     title: "Square Eyes",
     description: "Movie rental website. My first JavaScript project",
     image: "../images/thumbnails/square-eyes.png",
-    tech: ["HTML", "CSS", "JS"],
+    tech: [
+      "../images/icons/html5-brands-solid-full.svg",
+      "../images/icons/css-brands-solid-full.svg",
+      "../images/icons/js-brands-solid-full (1).svg",
+    ],
     repo: "https://github.com/AlexanderLislelid/CA-JS1-New",
     demo: "https://alexanderlislelid.github.io/CA-JS1-New/",
   },

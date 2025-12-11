@@ -9,9 +9,10 @@ projects.forEach((project) => {
   const image = document.createElement("img");
   const repo = document.createElement("a");
   const demo = document.createElement("a");
-  const tech = document.createElement("p");
+  const techWrapper = document.createElement("div");
 
   card.className = "project-card";
+  techWrapper.className = "tech-wrapper";
 
   title.textContent = project.title;
   title.className = "project-title";
@@ -30,9 +31,14 @@ projects.forEach((project) => {
   demo.href = project.demo;
   demo.textContent = "Live Demo";
 
-  tech.textContent = project.tech;
-  tech.className = "project-tech";
+  project.tech.forEach((techIcon) => {
+    const icon = document.createElement("img");
+    icon.src = techIcon;
+    icon.className = "tech-icon";
+    techWrapper.append(icon);
+  });
 
   wrapper.append(card);
-  card.append(title, description, image, repo, demo, tech);
+
+  card.append(title, description, image, repo, demo, techWrapper);
 });

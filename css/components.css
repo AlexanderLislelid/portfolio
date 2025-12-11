@@ -1,10 +1,3 @@
-nav {
-  border-bottom: 1px solid var(--cta-border);
-}
-
-.nav-desktop {
-  display: flex;
-  gap: var(--space-48);
-  padding: var(--space-24);
-  justify-content: flex-end;
+.tech-icon {
+  max-width: 30px;
 }
