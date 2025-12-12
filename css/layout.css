@@ -92,6 +92,7 @@ nav {
 
 .tools {
   display: flex;
+  flex-wrap: wrap;
   border-radius: 12px;
   padding: var(--space-8) var(--space-24);
   gap: var(--space-24);
@@ -129,4 +130,24 @@ nav {
 .downloads {
   display: flex;
   gap: var(--space-24);
+}
+
+/* Media queries */
+
+@media (max-width: 830px) {
+  #projects {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+}
+
+@media (max-width: 600px) {
+  #projects {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .projects-heading {
+    width: 100%;
+  }
 }
