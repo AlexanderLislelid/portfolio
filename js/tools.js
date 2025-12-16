@@ -25,13 +25,13 @@ export const tools = [
     title: "CSS",
     description:
       "Used for layout, responsive design, and styling. I work with modern CSS including Flexbox, Grid, media queries, variables, and animations to create clean and responsive interfaces.",
-    image: "../images/icons/css-brands-solid-full.svg",
+    image: "./images/icons/css-brands-solid-full.svg",
   },
   {
     id: "js",
     title: "JavaScript",
     description:
       "Used to create dynamic and interactive user interfaces. I work with modern JavaScript to render data-driven content, handle user interactions, and structure code in a modular way.",
-    image: "../images/icons/js-brands-solid-full (1).svg",
+    image: "./images/icons/js-brands-solid-full (1).svg",
   },
 ];
