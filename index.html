@@ -73,21 +73,23 @@
           Feel free to reach out if you want to connect or have any questions
         </p>
         <div class="contact-wrapper">
-          <form class="contact-message">
+          <form
+            class="contact-message"
+            action="mailto:alexlislelid@gmail.com?subject=Message%20from%20portfolio"
+            method="GET"
+            enctype="text/plain"
+          >
             <label for="message">Send me a message:</label>
             <textarea
               id="message"
               name="message"
               placeholder="Type your message here..."
-              rows="10"
-              cols="20"
             ></textarea>
-            <button type="submit" class="contact-cta">Send</button>
+            <button type="submit" class="msg-btn">
+              Send<i class="fa-regular fa-paper-plane"></i>
+            </button>
           </form>
           <div class="contact-links">
-            <a href="mailto:alexlislelid@gmail.com" class="contact-cta"
-              ><i class="fa-regular fa-envelope"></i> Send me an Email</a
-            >
             <a
               href="https://linkedin.com/in/alexander-lislelid-270a74333"
               class="contact-cta"
