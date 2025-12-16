@@ -90,6 +90,7 @@ section {
   padding: 100px 24px;
 }
 
-#about p {
+#about p,
+.project-card p {
   text-align: center;
 }
