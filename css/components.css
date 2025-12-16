@@ -40,7 +40,7 @@
 }
 .fa-regular.fa-folder,
 .fa-solid.fa-globe {
-  padding: 4px;
+  margin-right: var(--space-4);
 }
 
 .contact-cta {
