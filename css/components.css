@@ -85,15 +85,16 @@
   border-radius: var(--radius-pill);
   padding: var(--space-8);
   cursor: pointer;
+
   transition: transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 .tool-icon:hover,
 .tool-icon:focus-visible {
   transform: translateY(-4px);
-  box-shadow: 0 0 8px #00ff7a, 0 0 20px #00ff7a, 0 0 40px rgba(0, 255, 122, 0.8);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--glowline) 35%, transparent),
+    0 0 20px color-mix(in srgb, var(--glowline) 60%, transparent);
 }
-
 /* Contact message area */
 
 .contact-message textarea {
