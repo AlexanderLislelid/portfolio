@@ -58,6 +58,19 @@ ul {
   padding: 0;
 }
 
+button {
+  all: unset;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+textarea {
+  font: inherit;
+  color: var(--font-body);
+}
+
 img,
 picture,
 svg {

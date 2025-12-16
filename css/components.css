@@ -15,7 +15,7 @@
 .cta {
   border: 2px solid var(--cta-border);
   padding: var(--space-8);
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-8);
   width: 150px;
   text-align: center;
   background-color: transparent;
@@ -35,7 +35,7 @@
 
 .contact-cta {
   padding: var(--space-16);
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-8);
   border: 2px solid var(--cta);
   display: inline-flex;
   align-items: center;
@@ -47,11 +47,21 @@
   color: var(--cta);
 }
 
-.download-cta {
-  padding: var(--space-8) var(--space-16);
-  border-radius: var(--radius-pill);
-  width: 150px;
-  text-align: center;
-  background-color: var(--cta);
-  color: var(--bg-main);
+.contact-message button {
+  padding: var(--space-8);
+  border-radius: var(--radius-8);
+}
+
+/* Contact message area */
+
+.contact-message textarea {
+  background-color: var(--bg-card);
+  border: 2px solid var(--cta-border);
+  border-radius: var(--radius-8);
+  padding: var(--space-16);
+}
+
+.contact-message textarea:focus {
+  outline: none;
+  border: 2px solid var(--cta-hover);
 }

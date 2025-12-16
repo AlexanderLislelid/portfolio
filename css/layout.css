@@ -112,6 +112,13 @@ nav {
   justify-content: center;
 }
 
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-links {
   display: inline-flex;
   flex-direction: column;
@@ -127,9 +134,10 @@ nav {
   color: var(--text-secondary);
 }
 
-.downloads {
+.contact-message {
   display: flex;
-  gap: var(--space-24);
+  flex-direction: column;
+  gap: var(--space-16);
 }
 
 /* Media queries */
