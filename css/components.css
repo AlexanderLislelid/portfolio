@@ -4,10 +4,13 @@
   width: 30px;
 }
 
-.nav-desktop i,
-.link-wrapper i {
-  font-size: 30px;
+.nav-desktop i {
+  font-size: 25px;
   margin-left: var(--space-8);
+}
+
+.cta-card i {
+  font-size: 1.2rem;
 }
 
 /* Buttons */
@@ -30,10 +33,6 @@
   color: var(--text-primary);
 }
 
-.cta-card i {
-  font-size: 1.2rem;
-}
-
 .fa-regular.fa-folder,
 .fa-solid.fa-globe {
   margin-right: var(--space-4);
@@ -42,6 +41,7 @@
 .cta-card:focus,
 .cta-card:hover {
   scale: 110%;
+  color: var(--cta);
 }
 
 .contact-cta {
