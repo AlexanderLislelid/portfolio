@@ -61,6 +61,7 @@ toolsInfo.textContent = defaultText;
 
 function showToolInfo(tool) {
   toolsInfo.innerHTML = "";
+  toolsInfo.classList.add("is-open");
 
   const closeBtn = document.createElement("button");
   closeBtn.className = "close-btn";
@@ -73,6 +74,7 @@ function showToolInfo(tool) {
 
   closeBtn.addEventListener("click", () => {
     toolsInfo.textContent = defaultText;
+    toolsInfo.classList.remove("is-open");
   });
 
   const title = document.createElement("h3");
