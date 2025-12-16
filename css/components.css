@@ -33,6 +33,14 @@
   box-shadow: 0 0 2px var(--cta-hover);
 }
 
+.cta-card {
+  background-color: aliceblue;
+  border: 2px solid black;
+  padding: 4px var(--space-8) 4px var(--space-8);
+  color: black;
+  border-radius: var(--radius-pill);
+}
+
 .contact-cta {
   padding: var(--space-8) var(--space-16);
   border-radius: var(--radius-8);
