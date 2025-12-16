@@ -45,7 +45,6 @@ h2 {
 
 p {
   color: var(--text-secondary);
-  text-align: center;
 }
 
 label {
@@ -89,4 +88,8 @@ svg {
 
 section {
   padding: 100px 24px;
+}
+
+#about p {
+  text-align: center;
 }

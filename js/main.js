@@ -56,20 +56,29 @@ projects.forEach((project) => {
 const toolsImages = document.querySelector(".tools-images");
 const toolsInfo = document.querySelector(".tools-info");
 
+const defaultText = "Click a tool to view more information";
+toolsInfo.textContent = defaultText;
+
 function showToolInfo(tool) {
   toolsInfo.innerHTML = "";
 
   const closeBtn = document.createElement("button");
+  closeBtn.className = "close-btn";
+  closeBtn.type = "button";
+  closeBtn.setAttribute("aria-label", "Close");
 
-  closeBtn.className = "fa-solid fa-xmark";
+  const icon = document.createElement("i");
+  icon.className = "fa-solid fa-xmark";
+  closeBtn.appendChild(icon);
+
   closeBtn.addEventListener("click", () => {
-    toolsInfo.innerHTML = "";
+    toolsInfo.textContent = defaultText;
   });
 
   const title = document.createElement("h3");
-  const description = document.createElement("p");
-
   title.textContent = tool.title;
+
+  const description = document.createElement("p");
   description.textContent = tool.description;
 
   toolsInfo.append(closeBtn, title, description);
