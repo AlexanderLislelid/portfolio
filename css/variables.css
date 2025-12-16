@@ -11,9 +11,9 @@
   --text-secondary: #9fa4a6;
 
   /* Colour Buttons and links */
-  --cta: #4cc9a7;
-  --cta-hover: #5df2a6;
-  --cta-border: #2e6f5a;
+  --cta: #3b82f6;
+  --cta-hover: #2563eb;
+  --glowline: #60a5fa;
 
   /* Glassmorphism */
   --glass-bg: rgba(26, 28, 29, 0.7);

@@ -13,7 +13,7 @@
 /* Buttons */
 
 .cta {
-  border: 2px solid var(--cta-border);
+  border: 2px solid var(--glowline);
   padding: var(--space-8);
   border-radius: var(--radius-8);
   width: 150px;
@@ -26,11 +26,13 @@
 .cta:focus,
 .contact-cta:hover,
 .contact-cta:focus {
-  background: rgba(76, 201, 167, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-color: var(--cta-hover);
-  box-shadow: 0 0 2px var(--cta-hover);
+  background: var(--cta-hover);
+  color: var(--text-primary);
+}
+
+.cta i:hover,
+.cta i:focus {
+  color: var(--text-primary);
 }
 
 .cta-card i {
@@ -54,22 +56,26 @@
   color: var(--cta);
 }
 
-.msg-btn i {
-  font-size: 18px;
-  margin-left: var(--space-8);
-  color: var(--bg-main);
+.contact-cta i {
+  color: inherit;
 }
 
 .msg-btn {
-  background-color: var(--cta);
+  background-color: var(--cta-hover);
   padding: var(--space-8) var(--space-16);
   border-radius: var(--radius-8);
-  color: var(--bg-main);
+  color: var(--text-primary);
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
+}
+
+.msg-btn i {
+  font-size: 18px;
+  margin-left: var(--space-8);
+  color: inherit;
 }
 
 /* Tech icons */
@@ -92,12 +98,12 @@
 
 .contact-message textarea {
   background-color: var(--bg-card);
-  border: 2px solid var(--cta-border);
+  border: 2px solid var(--cta-hover);
   border-radius: var(--radius-8);
   padding: var(--space-16);
 }
 
 .contact-message textarea:focus {
   outline: none;
-  border: 2px solid var(--cta-hover);
+  border: 2px solid var(--cta);
 }
