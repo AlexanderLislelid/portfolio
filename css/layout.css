@@ -75,6 +75,7 @@ nav {
   flex-direction: column;
   max-width: 200px;
   gap: var(--space-16);
+  justify-content: space-between;
 }
 
 .repo {

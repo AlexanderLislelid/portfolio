@@ -11,7 +11,6 @@ projects.forEach((project) => {
   const repo = document.createElement("a");
   const demo = document.createElement("a");
   const topCard = document.createElement("div");
-  const bottomCard = document.createElement("div");
   const techWrapper = document.createElement("div");
   const linkWrapper = document.createElement("div");
 
@@ -19,7 +18,6 @@ projects.forEach((project) => {
   card.className = "project-card";
   techWrapper.className = "tech-wrapper";
   linkWrapper.className = "link-wrapper";
-  bottomCard.className = "bottom-card-wrapper";
 
   title.textContent = project.title;
   title.className = "project-title";
@@ -31,18 +29,20 @@ projects.forEach((project) => {
   image.alt = project.title;
   image.className = "project-image";
 
-  repo.textContent = "Repo";
+  repo.innerHTML = '<i class="fa-regular fa-folder"></i> Repo';
   repo.href = project.repo;
   repo.className = "cta-card";
 
   demo.className = "cta-card";
   demo.href = project.demo;
-  demo.textContent = "Live Demo";
+  demo.innerHTML = '<i class="fa-solid fa-globe"></i>  Demo';
 
   project.tech.forEach((techIcon) => {
     const icon = document.createElement("img");
     icon.src = techIcon;
     icon.className = "tech-icon";
+    icon.setAttribute("aria-hidden", "true");
+    icon.alt = "icon";
     techWrapper.append(icon);
   });
 
@@ -51,7 +51,7 @@ projects.forEach((project) => {
 
   linkWrapper.append(demo, repo);
 
-  card.append(image, topCard, bottomCard);
+  card.append(image, topCard);
 });
 
 // Tools and tech
