@@ -34,11 +34,10 @@
 }
 
 .contact-cta {
-  padding: var(--space-16);
+  padding: var(--space-8) var(--space-16);
   border-radius: var(--radius-8);
   border: 2px solid var(--cta);
-  display: inline-flex;
-  align-items: center;
+  color: var(--text-secondary);
 }
 
 .contact-cta i {
@@ -47,9 +46,27 @@
   color: var(--cta);
 }
 
-.contact-message button {
-  padding: var(--space-8);
+.msg-btn i {
+  font-size: 18px;
+  margin-left: var(--space-8);
+  color: var(--bg-main);
+}
+
+.msg-btn {
+  background-color: var(--cta);
+  padding: var(--space-8) var(--space-16);
   border-radius: var(--radius-8);
+  color: var(--bg-main);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.msg-btn:hover,
+.msg-btn:focus {
+  /* add hover effect */
 }
 
 /* Contact message area */

@@ -114,16 +114,20 @@ nav {
 
 .contact-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   justify-content: center;
   align-items: center;
+  gap: var(--space-48);
+  margin-top: var(--space-48);
+  width: 100%;
+  max-width: 700px;
 }
 
 .contact-links {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: var(--space-16);
-  padding: var(--space-48);
 }
 
 #contact a {
@@ -146,6 +150,15 @@ nav {
   #projects {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-16);
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contact-links {
+    order: -1;
   }
 }
 

@@ -19,6 +19,7 @@ body {
 }
 
 main {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   flex: 1;
@@ -47,6 +48,10 @@ p {
   text-align: center;
 }
 
+label {
+  color: var(--text-secondary);
+}
+
 a {
   text-decoration: none;
   color: var(--text-primary);
@@ -62,13 +67,16 @@ button {
   all: unset;
   box-sizing: border-box;
   font: inherit;
-  color: inherit;
   cursor: pointer;
 }
 
 textarea {
   font: inherit;
   color: var(--font-body);
+  width: 100%;
+  min-height: 250px;
+  resize: vertical;
+  box-sizing: border-box;
 }
 
 img,
