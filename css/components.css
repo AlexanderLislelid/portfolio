@@ -30,17 +30,18 @@
   color: var(--text-primary);
 }
 
-.cta i:hover,
-.cta i:focus {
-  color: var(--text-primary);
-}
-
 .cta-card i {
   font-size: 1.2rem;
 }
+
 .fa-regular.fa-folder,
 .fa-solid.fa-globe {
   margin-right: var(--space-4);
+}
+
+.cta-card:focus,
+.cta-card:hover {
+  scale: 110%;
 }
 
 .contact-cta {
@@ -69,12 +70,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
 .msg-btn i {
   font-size: 18px;
   margin-left: var(--space-8);
   color: inherit;
+}
+
+.msg-btn:hover,
+.msg-btn:focus {
+  transform: translateY(-4px);
+  background-color: var(--cta);
 }
 
 .close-btn {

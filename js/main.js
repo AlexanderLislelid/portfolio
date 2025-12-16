@@ -11,11 +11,13 @@ projects.forEach((project) => {
   const repo = document.createElement("a");
   const demo = document.createElement("a");
   const topCard = document.createElement("div");
+  const techText = document.createElement("p");
   const techWrapper = document.createElement("div");
   const linkWrapper = document.createElement("div");
 
   topCard.className = "card-desc";
   card.className = "project-card";
+
   techWrapper.className = "tech-wrapper";
   linkWrapper.className = "link-wrapper";
 
@@ -36,6 +38,10 @@ projects.forEach((project) => {
   demo.className = "cta-card";
   demo.href = project.demo;
   demo.innerHTML = '<i class="fa-solid fa-globe"></i>  Demo';
+
+  techText.textContent = "Built using:";
+
+  techWrapper.append(techText);
 
   project.tech.forEach((techIcon) => {
     const icon = document.createElement("img");
@@ -60,7 +66,11 @@ const toolsImages = document.querySelector(".tools-images");
 const toolsInfo = document.querySelector(".tools-info");
 
 const defaultText = "Click a tool to view more information";
-toolsInfo.textContent = defaultText;
+
+function renderDefaultText() {
+  toolsInfo.innerHTML = `<p class="tools-default">${defaultText}</p>`;
+  toolsInfo.classList.remove("is-open");
+}
 
 function showToolInfo(tool) {
   toolsInfo.innerHTML = "";
@@ -78,6 +88,7 @@ function showToolInfo(tool) {
   closeBtn.addEventListener("click", () => {
     toolsInfo.textContent = defaultText;
     toolsInfo.classList.remove("is-open");
+    renderDefaultText();
   });
 
   const title = document.createElement("h3");
@@ -99,3 +110,5 @@ tools.forEach((tool) => {
 
   toolsImages.appendChild(img);
 });
+
+renderDefaultText();
