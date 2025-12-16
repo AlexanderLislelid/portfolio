@@ -1,11 +1,5 @@
 export const tools = [
   {
-    id: "vscode",
-    title: "VS Code",
-    description: "insert text here",
-    image: "./images/icons/vscode.svg",
-  },
-  {
     id: "figma",
     title: "Figma",
     description: "insert text here",

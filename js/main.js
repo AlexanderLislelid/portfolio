@@ -1,6 +1,7 @@
 import { projects } from "./projects.js";
+import { tools } from "./tools.js";
 
-const wrapper = document.getElementById("projects");
+const projectsWrapper = document.getElementById("projects");
 
 projects.forEach((project) => {
   const card = document.createElement("div");
@@ -25,7 +26,7 @@ projects.forEach((project) => {
   description.className = "project-description";
 
   image.src = project.image;
-  image.alt = project.description;
+  image.alt = project.title;
   image.className = "project-image";
 
   repo.innerHTML = `Repository <i class="fa-brands fa-github"></i>`;
@@ -43,9 +44,44 @@ projects.forEach((project) => {
     techWrapper.append(icon);
   });
 
-  wrapper.append(card);
+  projectsWrapper.append(card);
   bottomCard.append(linkWrapper, techWrapper);
   linkWrapper.append(demo, repo);
 
   card.append(title, description, image, bottomCard);
+});
+
+// Tools and tech
+
+const toolsImages = document.querySelector(".tools-images");
+const toolsInfo = document.querySelector(".tools-info");
+
+function showToolInfo(tool) {
+  toolsInfo.innerHTML = "";
+
+  const closeBtn = document.createElement("button");
+
+  closeBtn.className = "fa-solid fa-xmark";
+  closeBtn.addEventListener("click", () => {
+    toolsInfo.innerHTML = "";
+  });
+
+  const title = document.createElement("h3");
+  const description = document.createElement("p");
+
+  title.textContent = tool.title;
+  description.textContent = tool.description;
+
+  toolsInfo.append(closeBtn, title, description);
+}
+
+tools.forEach((tool) => {
+  const img = document.createElement("img");
+  img.src = tool.image;
+  img.alt = tool.title;
+  img.className = "tool-icon";
+
+  img.addEventListener("click", () => showToolInfo(tool));
+
+  toolsImages.appendChild(img);
 });

@@ -64,9 +64,10 @@
   width: auto;
 }
 
-.msg-btn:hover,
-.msg-btn:focus {
-  /* add hover effect */
+/* Tech icons */
+
+.tool-icon {
+  height: 50px;
 }
 
 /* Contact message area */
