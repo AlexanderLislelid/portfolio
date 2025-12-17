@@ -15,7 +15,7 @@ export const projects = [
     id: "csm",
     title: "Science Museum",
     description: "An interactive museum for children",
-    image: "./images/thumbnails/museum.png",
+    image: "./images/thumbnails/csm.png",
     tech: [
       "./images/icons/html5-brands-solid-full.svg",
       "./images/icons/css-brands-solid-full.svg",

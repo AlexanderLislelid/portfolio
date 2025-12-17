@@ -37,7 +37,7 @@ projects.forEach((project) => {
 
   demo.className = "cta-card";
   demo.href = project.demo;
-  demo.innerHTML = '<i class="fa-solid fa-globe"></i>  Demo';
+  demo.innerHTML = '<i class="fa-solid fa-globe"></i> Website';
 
   techText.textContent = "Built using:";
 
