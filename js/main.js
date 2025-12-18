@@ -33,10 +33,12 @@ projects.forEach((project) => {
 
   repo.innerHTML = '<i class="fa-regular fa-folder"></i> Repo';
   repo.href = project.repo;
+  repo.target = "_blank";
   repo.className = "cta-card";
 
   demo.className = "cta-card";
   demo.href = project.demo;
+  demo.target = "_blank";
   demo.innerHTML = '<i class="fa-solid fa-globe"></i> Website';
 
   techText.textContent = "Built using:";
