@@ -112,3 +112,18 @@ tools.forEach((tool) => {
 });
 
 renderDefaultText();
+
+// Send message with textarea ( open email )
+
+const form = document.getElementById("contact-form");
+const messageBox = document.getElementById("message");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const message = messageBox.value;
+
+  const mailtoLink = `mailto:alexlislelid@gmail.com?subject=Message&body=${message}`;
+
+  window.location.href = mailtoLink;
+});
