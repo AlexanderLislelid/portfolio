@@ -121,7 +121,7 @@ const messageBox = document.getElementById("message");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const message = messageBox.value;
+  const message = encodeURIComponent(messageBox.value);
 
   const mailtoLink = `mailto:alexlislelid@gmail.com?subject=Message&body=${message}`;
 
